@@ -4,7 +4,8 @@ package agentintegration
 type VirtualHost struct {
 	FilePath,
 	ServerName,
-	DocRoot string
+	DocRoot,
+	WebServer string
 	Aliases []string
 	Ssl     bool
 }
