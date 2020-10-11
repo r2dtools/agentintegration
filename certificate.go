@@ -7,8 +7,8 @@ type Certificate struct {
 	ValidTo string
 	DNSNames,
 	EmailAddresses, Organization []string
-	IsCA   bool
-	Issuer Issuer
+	IsCA, IsValid bool
+	Issuer        Issuer
 }
 
 // Issuer represents base information about certificate issuer
