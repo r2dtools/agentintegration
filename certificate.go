@@ -16,3 +16,9 @@ type Issuer struct {
 	CN           string
 	Organization []string
 }
+
+// CertificateIssueRequestData contains data required to issue a certificate
+type CertificateIssueRequestData struct {
+	Email    string
+	Subjects []string
+}
