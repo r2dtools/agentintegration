@@ -19,6 +19,6 @@ type Issuer struct {
 
 // CertificateIssueRequestData contains data required to issue a certificate
 type CertificateIssueRequestData struct {
-	Email    string
-	Subjects []string
+	Email, ServerName string
+	Subjects          []string
 }
