@@ -21,6 +21,17 @@ type Issuer struct {
 type CertificateIssueRequestData struct {
 	Email,
 	ServerName,
-	DocRoot string
-	Subjects []string
+	DocRoot,
+	ChallengeType string
+	Subjects         []string
+	AdditionalParams map[string]string
+}
+
+// GetAdditionalParam returns additional param
+func (ctd *CertificateIssueRequestData) GetAdditionalParam(key string) string {
+	if ctd.AdditionalParams == nil {
+		ctd.AdditionalParams = make(map[string]string)
+	}
+
+	return ctd.AdditionalParams[key]
 }
