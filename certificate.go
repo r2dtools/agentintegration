@@ -22,6 +22,7 @@ type CertificateIssueRequestData struct {
 	Email,
 	ServerName,
 	DocRoot,
+	WebServer,
 	ChallengeType string
 	Subjects         []string
 	AdditionalParams map[string]string
