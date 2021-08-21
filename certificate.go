@@ -36,3 +36,10 @@ func (ctd *CertificateIssueRequestData) GetAdditionalParam(key string) string {
 
 	return ctd.AdditionalParams[key]
 }
+
+// CertificateUploadRequestData contains data required to upload a certificate
+type CertificateUploadRequestData struct {
+	ServerName,
+	WebServer,
+	PemCertificate string
+}
