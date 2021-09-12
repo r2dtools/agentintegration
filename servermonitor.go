@@ -6,7 +6,7 @@ type ServerMonitorTimeLineRequestData struct {
 }
 
 type ServerMonitorTimeLinePoint struct {
-	Value float32
+	Value map[string]float32
 	Time  int
 }
 
