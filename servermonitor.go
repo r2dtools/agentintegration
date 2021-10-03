@@ -19,3 +19,8 @@ type ServerMonitorDiskResponseData struct {
 	DiskIOTimeLineData    map[string][]ServerMonitorTimeLinePoint
 	DiskInfo              map[string]map[string]string // mountpoint => {'total': ..., 'free': ..., 'used': ..., ...}
 }
+
+type ServerMonitorNetworkResponseData struct {
+	TimeLineData   map[string][]ServerMonitorTimeLinePoint
+	InterfacesInfo []map[string]string
+}
