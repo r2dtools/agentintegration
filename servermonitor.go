@@ -24,3 +24,10 @@ type ServerMonitorNetworkResponseData struct {
 	TimeLineData   map[string][]ServerMonitorTimeLinePoint
 	InterfacesInfo []map[string]string
 }
+
+type ServerMonitorOverviewResponseData struct {
+	CpuTimeLineData     []ServerMonitorTimeLinePoint
+	NetworkTimeLineData []ServerMonitorTimeLinePoint
+	MemoryTimeLineData  []ServerMonitorTimeLinePoint
+	DiskTimeLineData    []ServerMonitorTimeLinePoint
+}
