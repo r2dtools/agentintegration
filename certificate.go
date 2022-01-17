@@ -43,3 +43,7 @@ type CertificateUploadRequestData struct {
 	WebServer,
 	PemCertificate string
 }
+
+type StorageCertificateNameList struct {
+	CertNameList []string
+}
