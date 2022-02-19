@@ -6,7 +6,11 @@ type Certificate struct {
 	ValidFrom,
 	ValidTo string
 	DNSNames,
-	EmailAddresses, Organization []string
+	EmailAddresses,
+	Organization,
+	Province,
+	Country,
+	Locality []string
 	IsCA, IsValid bool
 	Issuer        Issuer
 }
