@@ -52,3 +52,8 @@ type CertificateUploadRequestData struct {
 type StorageCertificateNameList struct {
 	CertNameList []string
 }
+
+type CertificateDownloadResponseData struct {
+	CertFileName,
+	CertContent string
+}
