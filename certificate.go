@@ -49,6 +49,13 @@ type CertificateUploadRequestData struct {
 	PemCertificate string
 }
 
+// CertificateAssignRequestData contains data required to assign a certificate to domain
+type CertificateAssignRequestData struct {
+	ServerName,
+	WebServer,
+	CertName string
+}
+
 type StorageCertificateNameList struct {
 	CertNameList []string
 }
