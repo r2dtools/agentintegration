@@ -30,6 +30,7 @@ type CertificateIssueRequestData struct {
 	ChallengeType string
 	Subjects         []string
 	AdditionalParams map[string]string
+	Assign           bool
 }
 
 // GetAdditionalParam returns additional param
