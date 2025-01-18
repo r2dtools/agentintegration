@@ -6,9 +6,10 @@ type VirtualHost struct {
 	ServerName,
 	DocRoot,
 	WebServer string
-	Aliases   []string
-	Ssl       bool
-	Addresses []VirtualHostAddress
+	Aliases     []string
+	Ssl         bool
+	Addresses   []VirtualHostAddress
+	Certificate *Certificate
 }
 
 // VirtualHostAddress repesents webserver vhost address
