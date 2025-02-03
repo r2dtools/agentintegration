@@ -65,3 +65,18 @@ type CertificateDownloadResponseData struct {
 	CertFileName,
 	CertContent string
 }
+
+type CommonDirStatusRequestData struct {
+	WebServer  string
+	ServerName string
+}
+
+type CommonDirStatusResponseData struct {
+	Status bool
+}
+
+type CommonDirChangeStatusRequestData struct {
+	WebServer  string
+	ServerName string
+	Status     bool
+}
