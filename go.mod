@@ -1,3 +1,3 @@
 module github.com/r2dtools/agentintegration
 
-go 1.15
+go 1.23
