@@ -1,6 +1,5 @@
 package agentintegration
 
-// VirtualHost represents webserver vhost
 type VirtualHost struct {
 	FilePath,
 	ServerName,
@@ -12,9 +11,17 @@ type VirtualHost struct {
 	Certificate *Certificate
 }
 
-// VirtualHostAddress repesents webserver vhost address
 type VirtualHostAddress struct {
 	IsIpv6 bool
 	Host,
 	Port string
+}
+
+type VirtualHostConfigResponseData struct {
+	Content string
+}
+
+type VirtualHostConfigRequestData struct {
+	WebServer  string
+	ServerName string
 }
