@@ -56,8 +56,8 @@ type CertificateAssignRequestData struct {
 	CertName string
 }
 
-type StorageCertificateNameList struct {
-	CertNameList []string
+type CertificatesResponseData struct {
+	Certificates map[string]*Certificate
 }
 
 type CertificateDownloadResponseData struct {
