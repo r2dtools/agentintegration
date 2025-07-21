@@ -46,7 +46,6 @@ type CertificateUploadRequestData struct {
 	ServerName     string
 	WebServer      string
 	CertName       string
-	StorageType    string
 	PemCertificate string
 }
 
@@ -78,8 +77,8 @@ type CertificatesResponseData struct {
 }
 
 type CertificateDownloadResponseData struct {
-	CertFileName,
-	CertContent string
+	CertFileName string
+	CertContent  string
 }
 
 type CommonDirStatusRequestData struct {
