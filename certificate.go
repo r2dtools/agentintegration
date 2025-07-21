@@ -43,17 +43,34 @@ func (ctd *CertificateIssueRequestData) GetAdditionalParam(key string) string {
 
 // CertificateUploadRequestData contains data required to upload a certificate
 type CertificateUploadRequestData struct {
-	ServerName,
-	WebServer,
-	CertName,
+	ServerName     string
+	WebServer      string
+	CertName       string
+	StorageType    string
 	PemCertificate string
 }
 
 // CertificateAssignRequestData contains data required to assign a certificate to domain
 type CertificateAssignRequestData struct {
-	ServerName,
-	WebServer,
-	CertName string
+	ServerName  string
+	WebServer   string
+	CertName    string
+	StorageType string
+}
+
+type CertificateDownloadRequestData struct {
+	CertName    string
+	StorageType string
+}
+
+type CertificateRemoveRequestData struct {
+	CertName    string
+	StorageType string
+}
+
+type CertificateInfoRequestData struct {
+	CertName    string
+	StorageType string
 }
 
 type CertificatesResponseData struct {
