@@ -1,10 +1,10 @@
 package agentintegration
 
 type VirtualHost struct {
-	FilePath,
-	ServerName,
-	DocRoot,
-	WebServer string
+	FilePath    string
+	ServerName  string
+	DocRoot     string
+	WebServer   string
 	Aliases     []string
 	Ssl         bool
 	Addresses   []VirtualHostAddress
@@ -13,8 +13,8 @@ type VirtualHost struct {
 
 type VirtualHostAddress struct {
 	IsIpv6 bool
-	Host,
-	Port string
+	Host   string
+	Port   string
 }
 
 type VirtualHostConfigResponseData struct {
@@ -24,4 +24,8 @@ type VirtualHostConfigResponseData struct {
 type VirtualHostConfigRequestData struct {
 	WebServer  string
 	ServerName string
+}
+
+type ReloadWebServerRequestData struct {
+	WebServer string
 }

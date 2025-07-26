@@ -1,6 +1,5 @@
 package agentintegration
 
-// Certificate represents certificate data
 type Certificate struct {
 	CN,
 	ValidFrom,
@@ -15,13 +14,11 @@ type Certificate struct {
 	Issuer        Issuer
 }
 
-// Issuer represents base information about certificate issuer
 type Issuer struct {
 	CN           string
 	Organization []string
 }
 
-// CertificateIssueRequestData contains data required to issue a certificate
 type CertificateIssueRequestData struct {
 	Email,
 	ServerName,
@@ -30,9 +27,9 @@ type CertificateIssueRequestData struct {
 	Subjects         []string
 	AdditionalParams map[string]string
 	Assign           bool
+	PreventReload    bool
 }
 
-// GetAdditionalParam returns additional param
 func (ctd *CertificateIssueRequestData) GetAdditionalParam(key string) string {
 	if ctd.AdditionalParams == nil {
 		ctd.AdditionalParams = make(map[string]string)
@@ -41,7 +38,6 @@ func (ctd *CertificateIssueRequestData) GetAdditionalParam(key string) string {
 	return ctd.AdditionalParams[key]
 }
 
-// CertificateUploadRequestData contains data required to upload a certificate
 type CertificateUploadRequestData struct {
 	ServerName     string
 	WebServer      string
@@ -49,7 +45,6 @@ type CertificateUploadRequestData struct {
 	PemCertificate string
 }
 
-// CertificateAssignRequestData contains data required to assign a certificate to domain
 type CertificateAssignRequestData struct {
 	ServerName  string
 	WebServer   string
