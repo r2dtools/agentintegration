@@ -62,11 +62,6 @@ type CertificateRemoveRequestData struct {
 	StorageType string
 }
 
-type CertificateInfoRequestData struct {
-	CertName    string
-	StorageType string
-}
-
 type CertificatesResponseData struct {
 	Certificates map[string]*Certificate
 }
