@@ -14,3 +14,7 @@ type ServerData struct {
 	BootTime        uint64
 	Settings        map[string]string
 }
+
+type ChangeCertbotStatusRequestData struct {
+	Value bool
+}
