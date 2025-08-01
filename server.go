@@ -18,3 +18,7 @@ type ServerData struct {
 type ChangeCertbotStatusRequestData struct {
 	Value bool
 }
+
+type ChangeCertbotStatusResponseData struct {
+	Versoin string
+}
