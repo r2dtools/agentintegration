@@ -20,5 +20,5 @@ type ChangeCertbotStatusRequestData struct {
 }
 
 type ChangeCertbotStatusResponseData struct {
-	Versoin string
+	Version string
 }
